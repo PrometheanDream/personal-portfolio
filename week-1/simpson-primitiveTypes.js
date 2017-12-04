@@ -29,6 +29,3 @@ console.log(street);
 console.log(city); 
 console.log(state); 
 console.log(zipCode);  
-
-
-// end program 
