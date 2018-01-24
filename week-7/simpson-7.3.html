@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7.3</title>
+
+    <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+
+<div id="list"></div>
+
+    <script>
+        // document.write() code goes here...
+    document.write("<h1>SHOPPING LIST v.1</h1>");
+        document.write("<ol>");
+            document.write("<li>Oranges</li>");
+            document.write("<li>Apples</li>");
+            document.write("<li>Pears</li>");
+            document.write("<li>Limes</li>");
+            document.write("<li>Lemons</li>");
+        document.write("</ol>");
+    </script>
+
+    
+        // innerHTML code goes here ...
+<div id="groceryList"></div>
+
+<script>
+    
+    document.getElementById('groceryList').innerHTML = "<h3> Grocery List</h3>" +   
+    "<table>" +
+    "<thead>" +
+    "<tr>" +
+        "<th>Id</th>" +
+        "<th>Item</th>" +
+    "</tr>" +
+    "</thead>" + 
+    "<tbody>" +  
+    "<tr>" +
+        "<td>1</td>" +
+        "<td>Oranges</td>" +
+    "</tr>" +
+    "<tr>" +
+        "<td>2</td>"+
+        "<td>Apples</td>" +
+    "</tr>"+
+    "<tr>" +
+         "<td>3</td>"+
+          "<td>Pears</td>" +
+    "</tr>"+
+    "<tr>" +
+        "<td>4</td>"+
+        "<td>Limes</td>" +
+    "</tr>"+
+    "<tr>" +
+         "<td>5</td>"+
+         "<td>Lemons</td>" +
+    "</tr>"+
+        
+    "</tbody>" +
+    "</table>"
+
+</script>
+
+</body>
+</html>
