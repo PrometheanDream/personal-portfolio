@@ -44,9 +44,9 @@
     
     function getEmployeeDetails(id) { // function cycles through var i, if it's true, input becomes i[0-4] corresponding to the new EmployeeDetails [0-4] and returns concat result.
         var input = "";
-        employees.forEach( function(a, i, a){
-            if(a[i].id == id){
-                input = a[i];
+        employees.forEach( function(one, i, one){ // forEach requires three parameters, currentValue, index, and arr. first and third match as the current element and arr are both assigned to the value of [i]
+            if(one[i].id == id){
+                input = one[i];
             }
         });
         return (input.id + " " + input.firstName + " " +
