@@ -15,16 +15,31 @@
 <div id="fruits"></div>
 
 <script>
+    function Fruit(id, type){
+        this.id = id;
+        this.type = type;
+    }
 
-    var fruits = ["1: Oranges", "2: Apples", "3: Pears", "4: Limes", "5: Lemons"];
+    var fruits = [
+    new Fruit (1, "Oranges"),
+    new Fruit (2, "Apples"),
+    new Fruit (3, "Pears"),
+    new Fruit (4, "Limes"),
+    new Fruit (5, "Lemons")
+
+];
+
+
 
     var out = "<h2>Fruits</h2><ul>";
 
         for (var x = 0; x < fruits.length; x++) { // iterates through the array to output the fields.
-            out += "<ul>" + fruits[x] + "</ul>";
+            out += "<ul>" + fruits[x].id + ": " + fruits[x].type + "</ul>";
         }
         out += "</ul>";
         document.getElementById('fruits').innerHTML = out;
+
+       
 
 </script>
 

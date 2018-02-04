@@ -1,47 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Click</title>
+    <title>Assignment 8.4</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../site.css">
+
+    <style type="text/css">
+        #employee tbody tr:hover {
+            cursor: pointer;
+            background-color: #ffff99;
+        }
+    </style>
 </head>
 <body>
 
-<p>Hello World!</p>
+<div id="emps"></div>
 
-<br/>
-<table>
-    <tr>
-        <td><a href="#" class="vehicleId">1</a></td>
-        <td>Truck</td>
-    </tr>
-    <tr>
-        <td><a href="#" class="vehicleId">2</a></td>
-        <td>Car</td>
-    </tr>
-    <tr>
-        <td><a href="#" class="vehicleId">3</a></td>
-        <td>Bus</td>
-    </tr>
-</table>
+<script type="text/javascript">
+
+    // employee constructor object
+    function EmployeeDetails(id, firstName, lastName, title) { // constructor object that is created as a function with four arguments.
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.title = title;
+}
+
+    // employee array
+    var employees = [
+        new EmployeeDetails(1, "Thomas", "Edison", "Software Engineer"), // array that fills in the information from the constructor object.
+        new EmployeeDetails(2, "Benjamin", "Franklin", "Programmer"),
+        new EmployeeDetails(3, "Nikola", "Tesla", "Project Manager"),
+        new EmployeeDetails(4, "Charles", "Babbage", "Product Manager"),
+        new EmployeeDetails(5, "Alexander", "Bell", "Analyst")
+
+]
+
+    // getEmployee(id) function
+    
+    function getEmployeeDetails(id) { // function cycles through var i, if it's true, input becomes i[0-4] corresponding to the new EmployeeDetails [0-4] and returns concat result.
+        var input = "";
+        employees.forEach( function(a, i, a){
+            if(a[i].id == id){
+                input = a[i];
+            }
+        });
+        return (input.id + " " + input.firstName + " " +
+            input.lastName + " " + input.title);
+    }
+    
+
+    // output string variable
+    var output = "<h1>Employee Listing</h1>"; // var output creates the table
+        output += "<table id='employee'>";
+        output += "<thead><tr><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></tr></thead>";
+        output += "<tbody>";
+
+    // for loop 
+    for(var i = 0; i < employees.length; i++){ // the for loop populates each new row then cell with i[0-4] from the array.
+        output += "<tr><td>" + employees[i].id + "</td>" +
+        "<td>" + employees[i].firstName + "</td>" +
+        "<td>" + employees[i].lastName + "</td>" +
+        "<td>" + employees[i].title + "</td></tr>";  
+    }
+    output += "</tbody></table>"
 
 
-<script>
+    // innerHTML call
+
+    document.getElementById("emps").innerHTML = output; // makes it all appear on the page
+
+    // jQuery onClick event
     $(function () {
-        $("p").click(function () {
-            $(this).css("background-color", "red");
-            $(this).css("color", "white");
-        });
-        $(".vehicleId").click(function (event) {
-            event.preventDefault();
-            var vehicleId = $(this).text();
-            var vehicleType = $(this).closest("td").next().text();
-            alert("{vehicle_id: " + vehicleId + ", vehicle_type: " + vehicleType + "}");
-        });
+        $("table tr").click(function () {
+            var id = $(this).find('td:first').html(); // finds the first td, which is the id field, and .html allows it to search the whole document.
+            alert( getEmployeeDetails(id) ); // creates message box based off which id has been selected.
+        })
     });
 </script>
-
 </body>
 </html>
