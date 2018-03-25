@@ -1,49 +1,38 @@
-#mainPage {
-width: 100%;
-height: 100%;
-background-color: rgb(240, 244, 245);
-border-style: solid;
-}
-
-#header-bg {
-width: 100%;
-height: 25%;
-background-color: rgb(17, 17, 17);
-border-bottom: solid;
-}
-
-#header-content {
-text-align: center;
-padding: 9%;
+#allImages {
+    
 }
 
 body {
-    
-    padding-top: 1%;
-}
-
-#main {
-    background-color: darkgray;
-    height: auto;
-}
-
-#body-content-image {
-   border-style: solid;
-    width: 35%;
-    height: 35%;
-    padding-left: 10%;
-    margin-left: 10%;
-    margin-top: 15%;
+        padding-top: 1%;
 }
 
 #body-content {
     box-sizing: border-box;
-    margin-top: 15%;
+   
+    margin-top: 4%;
     margin-right: 4%;
+    margin-bottom: 5%;
     float: right;
-    border-style: solid;
+    
     width: 50%;
-    height: 35%;
+    height: auto;
+    
+}
+
+#body-content-image {
+    
+     width: 35%;
+     height: 40%;
+     padding-left: 5%;
+     margin-top: 5%;
+     margin-bottom: 25%;
+     
+    
+ }
+
+ #body-content-paragraphs {
+    font-size: .8vw;
+
 
 }
 
@@ -58,18 +47,48 @@ body {
 
 }
 
-
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 2%; 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 1%; 
-    margin-bottom: 1%; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+#contact-form {
+    height: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
 }
 
+#contact-mainPage {
+    width: 100%;
+    height: auto;
+    background-color: rgb(240, 244, 245);
+    border-style: solid;
+    }
+
+.container {
+    display:block;
+}
+
+footer {}
+
+#gallery-image {
+    width: 75%;
+    
+    margin: 1.66%;
+}
+
+#gallery-link{
+   
+}
+
+#header-bg {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(17, 17, 17);
+    border-bottom: solid;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+#header-content {
+    text-align: center;
+    padding: 9%;
+}
 
 input[type=submit] {
     background-color: #4CAF50;
@@ -86,12 +105,38 @@ input[type=submit]:hover {
     
 }
 
-#contact-mainPage {
-    width: 100%;
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 2%; 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#landingPage {
+    padding-bottom: 1%;
+}
+
+#pageBackground {
+    background-color: darkgray;
     height: auto;
-    background-color: rgb(240, 244, 245);
-    border-style: solid;
-    }
+    width: auto;
+    
+}
+
+#mainPage {
+width: 100%;
+height: auto;
+background-color: rgb(240, 244, 245);
+border-style: solid;
+}
+
+#space {
+    margin-bottom: 1%;
+}
 
 #submitButton {
     padding-top: 1%;
@@ -100,24 +145,9 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-#contact-form {
-    height: 100%;
-    padding-bottom: 1%;
-    padding-top: 5%;
-}
-
-#gallery-image {
-    width: 75%;
-	
-	margin: 1.66%;
-}
-
 .thumbnail {
     border-style: solid;
     margin: 2%;
     padding: 1%;
 }
 
-#gallery-link{
-    border-style: solid;
-}

@@ -19,31 +19,180 @@
             <a class="navbar-brand text-white">William Simpson</a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/bio.html">BIO</a>
+                <a class="nav-link" href="#bio">BIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item text-right">
-                <a class="nav-link" href="pages/gallery.html">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
             </li>
         </ul>
     </nav>
     
-    <div>
+    <div id="pageBackground">                    
+            <div id="home" class="container">
+                 <div id="mainPage">
+                    
+            
+            
+                            <img src="img/matterhorn.jpg", alt="Background Mountain Image" height="auto" width="100%")<br />
+                            <img src="img/inbetween.png", alt="black seperator box" height="15%" width="100%")<br />
+                            <img src="img/front-end-1.png", alt="front end design" height="auto" width="100%")<br />
+                            <img src="img/inbetween.png", alt="black seperator box" height="15%" width="100%")<br />
+                            <img src="img/back-end-1.png", alt="back end design" height="auto" width="100%")<br />
+            
+                    
+                </div>
+            </div>
+        </div>    
+
+ 
+
+   
+        <div id="pageBackground">
+        
+            <div class="container">
+                <div id="mainPage"> <!-- the main page -->
+                    <div id="contentPage">
+                        <div id="header-bg">                            
+                            <div id="header-content">
+                                <h1 id="bio" style="color: white">About Me</h1>
+                            </div>                    
+                        </div>
+                        <div id="body-content">
+                            <div id="body-content-paragraphs">
+                                <p>Hi there, I'm Will. I'm a student web developer at Bellevue University, located in Bellevue, Nebraska.
+                                    I love front-end and UI/UX design because every project is its own unique puzzle
+                                    that needs a complex custom solution. Back-end coding is great too, creating your own servers,
+                                    and managing to send information to customers and update databases is extremely rewarding and
+                                    really drives home the idea that I've actually made something.
+                                     </p>
+                                <p> After I graduate, I hope to find a full-stack web developer position that allows me to progress and grow my
+                                    proffesional skills, learn new and exciting techniques, and be a part of a purpose driven team and company. 
+                                    I love to work hard, and really put my creativity and ingenuity to the test.
+                                    
+                                </p>
+                                <p>I'm originally from Colorado, so it's pretty natural that I love sunshine, adventure sports, traveling, a great book, and technology. </p>
+                            </div>
+        
+                        </div>
+                        <div id="body-content-image">
+                            <p><img src="img/portfolio-picture.png", alt="Picture of me at the Munich Christmas Market in Germany" height="auto" width="100%")</p>
+    
+                        </div>
+                    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
 
 
-        <h3><img src="img/matterhorn.jpg", alt="Background Mountain Image" height="100%" width="100%")</h3>
-        <div><h3><img src="img/inbetween.png", alt="black seperator box" height="15%" width="100%")</h3>
-        <img src="img/front-end-1.png", alt="front end design" height="50%" width="100%")
-        <h3><img src="img/inbetween.png", alt="black seperator box" height="10%" width="100%")</h3>
-        <img src="img/back-end-1.png", alt="back end design" height="100%" width="100%")</div>
-   
-   
-        <div role="main" class="container"></div>
+        <div id="pageBackground">
+        
+            <div class="container">
+                
+                <div id="contact-mainPage"> <!-- the main page -->
+                    
+                    <div id="contact-contentPage">
+                        
+                        <div id="header-bg">                            
+                            <div id="header-content">
+                                <h1 id="contact" style="color: white">Contact Me</h1>
+                                <hr/>
+                            </div>                    
+                        </div>
+                    
+                        <div id="contact-content-form">
+                            
+                                <form id="contact-form">
+
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                        
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" name="email" placeholder="Email Address..">                                  
+                                                                                                                  
+                                        <label for="subject">Subject</label>
+                                        <textarea id="subject" name="subject" placeholder="Please provide information on what kind of project you'd like to develop.." style="height:200px"></textarea>
+                                    
+                                        <div id="submitButton"><input type="submit" value="Submit"></div>
+                                    
+                                </form>
+    
+                        </div>
+                    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <div id="pageBackground">
+            <div class="container"> 
+                <div id="mainPage">
+                    <div class="jumbotron">
+                        <h1 id="gallery"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Development Gallery</h1>
+                        <p>A snap shot of my work so far.</p>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/biosite-image-resize.png" alt="image of biosite" >
+                                <div id="gallery-link"><p ><a href="https://prometheandream.github.io/bioSite/">My Biosite</a></p></div>	
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/biosite-prototype.png">
+                                <div id="gallery-link"><p ><a href="https://github.com/PrometheanDream/bioSite">My Biosite template</a></p></div>	
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/web-230 repository.png">
+                                <div id="gallery-link"><p ><a href="https://github.com/PrometheanDream/web-230">My web 230 repository</a></p></div>	
+                            </div>
+                        </div>	
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/portfolio-prototype.png">
+                                <div id="gallery-link"><p><a href="https://github.com/PrometheanDream/personal-portfolio">My portfolio prototype</a></p></div>	
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/web-330-repository.png">
+                                <div id="gallery-link"><p ><a href="https://github.com/PrometheanDream/web-330">My web-330 repository</a></p></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="thumbnail">
+                                <img id="gallery-image" src="img/future-projects.png">
+                                <div id="gallery-link"><p >Link</p></div>	
+                            </div>
+                        </div>                               
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            
+               
+                
 
 
 </body>
