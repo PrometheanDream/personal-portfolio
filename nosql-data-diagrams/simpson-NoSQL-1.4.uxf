@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>480</w>
+      <h>810</h>
+    </coordinates>
+    <panel_attributes>halign=left
+{ “firstname”: “Billy”,
+
+“lastname”: “Joel”,
+
+“roles”: [
+
+  {“type”: “singer”, “genre”: “rock”},
+
+             {“type”: “musician”, “instrument”: “piano”}
+
+      ]
+
+}
+
+{ “firstname”: “Billy”,
+
+“lastname”: “Joel”,
+
+“birthdate”: [
+
+  {“day”: “9”, “month”: “may”, “year”: “1949”}
+
+      ]
+
+}
+
+{ “firstname”: “Billy”,
+
+“lastname”: “Joel”,
+
+“dependents”: [
+
+  {“wife1”: “alexis”, “wife2”: “katie”, “wife3”: “christie”, “wife4”: “elizabeth”},
+
+             {“kid1”: “alexa”, “kid2”: “remy”, “kid3”: “della”}
+
+      ]
+
+}
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
